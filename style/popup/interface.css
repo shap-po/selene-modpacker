@@ -1,0 +1,93 @@
+.interface * {
+	height: 36px; /*fix height of all elements of the interface*/
+	/*set width to fill content of the interface*/
+	width: 100%;
+	width: -moz-available;
+	width: -webkit-fill-available;
+	width: fill-available;
+	color: var(--color-text) !important;
+}
+.interface {
+	padding: var(--spacing-card-bg);
+	background: var(--color-raised-bg);
+	border-radius: var(--size-rounded-card);
+	margin-bottom: var(--spacing-card-md);
+}
+
+/*buttons*/
+.interface button {
+	border-radius: 1.25rem !important;
+}
+.interface button:hover {
+	color: inherit;
+}
+.inline-block {
+	display: flex;
+	height: auto;
+}
+
+/*text inputs*/
+input[type="text"] {
+	border: none;
+	border-radius: 1.25rem;
+}
+#modpack-version {
+	/*for some reason version input box takes space from select box, so this will pervert it*/
+	width: calc(100% - 2rem);
+	text-align: center;
+}
+/*search box*/
+.search-container {
+	position: relative;
+}
+#search {
+	padding-left: 2rem;
+	padding-right: 2.2rem;
+}
+.search-icon {
+	position: absolute;
+	align-self: center;
+	width: 1rem;
+	height: 1rem;
+	z-index: 1;
+
+	fill: none;
+	stroke: currentcolor;
+	stroke-width: 2;
+}
+.search-icon.search {
+	left: 0.8rem;
+}
+.search-icon.clear {
+	right: 1rem;
+	display: none;
+}
+
+/*download information*/
+.download-container {
+	height: 0;
+	opacity: 0;
+	display: none;
+	transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+
+.progress-bar {
+	background: var(--color-button-bg);
+	height: 18px !important;
+	margin: 2px;
+}
+.progress-bar .progress-bar-fill {
+	background: var(--selena-color);
+	height: 100%;
+	width: 0%;
+	transition: width 0.2s ease-in-out;
+}
+.progress-bar,
+.progress-bar .progress-bar-fill {
+	border-radius: 10px;
+}
+#download-status {
+	margin: 4px;
+	height: auto;
+	white-space: pre-wrap;
+}

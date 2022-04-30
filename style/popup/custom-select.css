@@ -1,0 +1,109 @@
+/*
+Actually this should be a part of interface.css but it's to large and developed for one specific feature
+*/
+
+/*hide default select*/
+.custom-select select {
+	display: none;
+}
+.custom-select {
+	margin: 2px;
+	font-weight: normal;
+	position: relative;
+	z-index: 99;
+}
+/*label is an actual hitbox and displayable part of select*/
+.custom-select .select-label {
+	background-color: var(--color-button-bg);
+	border: none;
+	border-radius: 1.25rem;
+	text-align: center;
+	padding: 0 1rem;
+}
+/*remove bottom part of the border to merge with options list*/
+.custom-select.active .select-label {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.custom-select .select-label:hover {
+	background-color: var(--color-button-bg-hover);
+}
+/*hide options by default*/
+.custom-select .select-options {
+	display: none;
+}
+.custom-select.active .select-options {
+	display: table;
+	background-color: var(--color-button-bg);
+	border-bottom-left-radius: var(--size-rounded-card);
+	border-bottom-right-radius: var(--size-rounded-card);
+}
+.custom-select .select-options .custom-option {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.custom-select
+	.select-options
+	.custom-option:not(.disabled):not(.selected):hover {
+	background-color: var(--color-button-bg-active);
+	color: var(--color-text-dark) !important;
+}
+.custom-select .select-options .custom-option.last {
+	border-bottom-left-radius: var(--size-rounded-card);
+	border-bottom-right-radius: var(--size-rounded-card);
+}
+.custom-select .select-options .custom-option.disabled {
+	/*set opacity to text*/
+	color: rgba(var(--color-text), 0.5);
+	cursor: default;
+}
+.custom-select .select-options .custom-option.selected {
+	background-color: var(--selena-color);
+	color: var(--color-brand-inverted) !important;
+	font-weight: 600;
+}
+.custom-select .select-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.custom-select .select-arrow {
+	position: absolute;
+	width: 40px;
+	height: 38px;
+	right: 0px;
+	top: 0px;
+	text-align: center;
+	transition: transform 0.2s ease;
+}
+.custom-select .select-arrow::after {
+	position: relative;
+	top: 65%;
+	color: #999;
+	border-color: #999 transparent transparent;
+	border-style: solid;
+	border-width: 5px 5px 0;
+	content: "";
+}
+.custom-select.active .select-arrow {
+	transform: rotate(180deg);
+	top: 2px;
+}
+.custom-select.active {
+	position: relative;
+	top: -2px;
+}
+.custom-select.active .select-label,
+.custom-select.active .select-options {
+	border: var(--color-divider-dark) 2px solid;
+}
+.custom-select.active .select-label {
+	border-bottom: none !important;
+}
+.custom-select.active .select-options {
+	border-top: none !important;
+	border-bottom-left-radius: calc(var(--size-rounded-card) + 2px);
+	border-bottom-right-radius: calc(var(--size-rounded-card) + 2px);
+}

@@ -1,0 +1,73 @@
+{
+	"name": "Selena Modpacker",
+	"description": "A tool for creating and managing modpacks.",
+	"author": "Shap_po",
+	"homepage_url": "https://github.com/shap-po/selena-modpacker",
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"icons": {
+		"32": "icons/selena-16.png",
+		"48": "icons/selena-48.png",
+		"64": "icons/selena-128.png"
+	},
+	"permissions": ["storage", "unlimitedStorage"],
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"host_permissions": [
+		"*://modrinth.com/*",
+		"*://*.curseforge.com/*",
+		"*://curse.nikky.moe/*",
+		"*://*.forgecdn.net/*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://modrinth.com/*"],
+			"js": ["js/injectors/modrinth/sync-theme.js"],
+			"all_frames": true
+		},
+		{
+			"matches": ["*://modrinth.com/mod/*"],
+			"js": [
+				"js/storage.js",
+				"js/cache.js",
+				"js/injectors/modrinth/mod.js"
+			],
+			"css": ["style/inject/modrinth.css"],
+			"all_frames": true
+		},
+		{
+			"matches": ["*://modrinth.com/mods*"],
+			"js": [
+				"js/storage.js",
+				"js/cache.js",
+				"js/injectors/modrinth/mods.js"
+			],
+			"css": ["style/inject/modrinth.css"],
+			"all_frames": true
+		},
+
+		{
+			"matches": ["*://*.curseforge.com/minecraft/mc-mods/*"],
+			"js": [
+				"js/storage.js",
+				"js/cache.js",
+				"js/injectors/curseforge/mod.js"
+			],
+			"css": ["style/inject/curseforge.css"],
+			"all_frames": true,
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://*.curseforge.com/minecraft/mc-mods*"],
+			"js": [
+				"js/storage.js",
+				"js/cache.js",
+				"js/injectors/curseforge/mods.js"
+			],
+			"css": ["style/inject/curseforge.css"],
+			"all_frames": true,
+			"run_at": "document_start"
+		}
+	]
+}

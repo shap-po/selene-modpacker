@@ -1,0 +1,87 @@
+<html class="dark-mode">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style/modrinth/global.css" />
+		<link rel="stylesheet" href="style/modrinth/normalize.css" />
+
+		<link rel="stylesheet" href="style/popup/interface.css" />
+		<link rel="stylesheet" href="style/popup/main.css" />
+		<link rel="stylesheet" href="style/popup/modlist.css" />
+		<link rel="stylesheet" href="style/popup/custom-select.css" />
+
+		<script src="js/lib/FileSaver.min.js"></script>
+		<script src="js/lib/jszip-utils.min.js"></script>
+		<script src="js/lib/jszip.min.js"></script>
+
+		<script src="js/storage.js"></script>
+		<script src="js/cache.js"></script>
+		<script src="js/downloader.js"></script>
+		<script defer src="js/popup.js"></script>
+	</head>
+	<body>
+		<div class="interface">
+			<select id="modpack-list" title="Select modpack"></select>
+
+			<div class="inline-block">
+				<button id="new-modpack">New Modpack</button>
+				<button id="delete-modpack">Delete Modpack</button>
+			</div>
+
+			<div class="inline-block">
+				<button id="import-modpack">Import Modpack</button>
+				<button id="export-modpack">Export Modpack</button>
+			</div>
+
+			<div class="inline-block">
+				<input
+					type="text"
+					id="modpack-version"
+					placeholder="Modpack Version"
+				/>
+
+				<select id="modpack-modloader" title="Select modloader">
+					<option disabled selected value>
+						-- select modloader --
+					</option>
+					<option value="fabric">Fabric</option>
+					<option value="quilt">Quilt</option>
+					<option value="forge">Forge</option>
+				</select>
+			</div>
+
+			<button id="download-modpack">Download Modpack</button>
+			<div class="download-container" id="download-container">
+				<div class="progress-bar">
+					<div class="progress-bar-fill" id="download-bar"></div>
+				</div>
+				<div id="download-status"></div>
+			</div>
+
+			<div class="inline-block search-container">
+				<svg class="search-icon search" viewBox="0 0 24 24">
+					<path
+						d="M 21 21 L 15 15 M 17 10 C 17 13.866 13.866 17 10 17 C 6.13401 17 3 13.866 3 10 C 3 6.13401 6.13401 3 10 3 C 13.866 3 17 6.13401 17 10 Z"
+					></path>
+				</svg>
+				<input
+					type="text"
+					id="search"
+					placeholder="Search..."
+					autocomplete="off"
+				/>
+				<svg
+					class="search-icon clear"
+					viewBox="0 0 24 24"
+					id="clear-search"
+				>
+					<path
+						d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+					></path>
+				</svg>
+			</div>
+		</div>
+
+		<div id="mod-list" class="mod-list"></div>
+		<div id="mod-search-list" class="mod-list"></div>
+	</body>
+</html>

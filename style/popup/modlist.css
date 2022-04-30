@@ -1,0 +1,129 @@
+.mod-list {
+	padding-bottom: 2px;
+}
+.mod-list > article {
+	display: flex;
+	flex-direction: column;
+}
+.mod-list .mod-info {
+	display: flex;
+	padding: var(--spacing-card-bg);
+	background: var(--color-raised-bg);
+	border-radius: var(--size-rounded-card);
+}
+.mod-list > article[disabled] > .mod-info {
+	/*make disabled mods transparent*/
+	opacity: 0.3;
+}
+.mod-list > article.failed > .mod-info {
+	color: var(--color-text-dark);
+	background: var(--color-badge-red-text);
+}
+
+/*drag & drop*/
+.drop-area {
+	--height: 96px;
+	width: 100%;
+	height: var(--spacing-card-bg);
+	margin: 0;
+	border-radius: var(--size-rounded-card);
+	position: relative;
+}
+.drop-area.element-dragged {
+	/*make drop areas larger when mod is dragged*/
+	height: var(--height);
+	margin: calc((var(--height) - var(--spacing-card-bg)) / -2) 0;
+}
+.drop-area.drag-over {
+	border: 1px dashed var(--selena-color);
+	height: calc(var(--height) - 2px);
+}
+
+/*icon*/
+.mod-list img {
+	width: 6rem;
+	height: 6rem;
+	border-radius: var(--size-rounded-icon);
+	margin: 0 var(--spacing-card-md) var(--spacing-card-md) 0;
+}
+/*container for all mod information and control buttons except icon*/
+.mod-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.mod-list .top-side {
+	display: flex;
+	width: 100%;
+}
+.mod-content .left-side {
+	width: 100%;
+}
+.mod-content .right-side {
+	display: flex;
+	flex-direction: row;
+	justify-content: top;
+}
+.mod-content .bottom-side {
+	display: flex;
+	width: 100%;
+}
+.mod-content .bottom-side p {
+	margin: 0;
+}
+
+/*buttons*/
+.mod-list button {
+	color: var(--color-brand-inverted);
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	border-radius: 50%;
+	display: flex;
+	align-content: center;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+}
+.mod-list button:hover {
+	background: var(--color-button-bg-hover) !important;
+}
+/*set colors of buttons to match color of mod provider*/
+.mod-list > .modrinth button {
+	background: var(--color-brand);
+}
+.mod-list > .curseforge button {
+	background: #f16436; /*color of the curseforge*/
+}
+
+/*svg icons*/
+.mod-list > article svg {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+
+	--eye-shown: path(
+		"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z M9,12a3,3 0 1,0 6,0a3,3 0 1,0-6,0"
+	);
+	--eye-hidden: path(
+		"M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24 M1 1,L23 23"
+	);
+	--cross: path("M18 6,6 18 M6 6, 18,18");
+}
+
+.mod-list > article[enabled] .disable-mod > svg > path {
+	d: var(--eye-shown);
+}
+.mod-list > article[disabled] .disable-mod > svg > path {
+	d: var(--eye-hidden);
+}
+.mod-list > article .remove-mod > svg > path {
+	d: var(--cross);
+}
+/*highlight text when searching*/
+p .highlight,
+a .highlight {
+	color: #50baf9;
+}

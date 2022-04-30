@@ -1,0 +1,14 @@
+.selena-add-button {
+	background: #1b8ada;
+	color: var(--color-brand-inverted);
+	width: 48px;
+	height: 48px;
+
+	font-size: xx-large;
+	display: inline-flex;
+	justify-content: center;
+	padding: 0;
+	align-items: center;
+	font-family: cursive;
+	padding-bottom: 0.2rem;
+}

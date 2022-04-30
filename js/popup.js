@@ -35,6 +35,9 @@ function updateModpackInfo() {
 		//add mods to list
 		for (var i = 0; i < mods.length; i++) {
 			var mod = mods[i];
+			if (mod === undefined || mod.id === undefined) {
+				continue;
+			}
 			var enabled = "enabled";
 			if (mod.enabled === false) {
 				enabled = "disabled";

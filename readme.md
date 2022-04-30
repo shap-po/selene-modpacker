@@ -21,6 +21,7 @@ Feel free to contribute to the project!
 ### Interface of the extension
 
 ![](images/screenshot.png)
+
 Color of buttons matches the color of mod provider. Eg. ModRinth's buttons are green and CurseForge's are orange.
 
 ## Installation

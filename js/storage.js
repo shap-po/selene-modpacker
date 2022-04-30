@@ -130,6 +130,9 @@ function setCurrentToLast(callback = callback_null) {
  * {id: "", provider: "", enabled: true}
  */
 function addMod(mod, callback = callback_null) {
+	if (mod === undefined || mod.id === undefined) {
+		return;
+	}
 	_get((result) => {
 		var mods = result.modpack.mods;
 		//check if mod already exists

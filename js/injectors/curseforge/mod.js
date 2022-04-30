@@ -18,7 +18,7 @@ var finder = setInterval(function () {
 
 		var add_button = document.createElement("button");
 		add_button.innerHTML = "+ Add mod to modpack";
-		add_button.className = "button selena-add-button";
+		add_button.className = "button selene-add-button";
 		add_button.dataset.modId = modId;
 		add_button.style = `top: 4px;`;
 		add_button.addEventListener("click", function () {

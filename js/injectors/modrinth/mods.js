@@ -11,7 +11,7 @@ setInterval(function () {
 		);
 		var left = mods[i].querySelector('div[class="icon"]');
 		var add_button = right.querySelector(
-			'button[class="selena-add-button"]'
+			'button[class="selene-add-button"]'
 		);
 		if (!add_button) {
 			var modId = left
@@ -19,7 +19,7 @@ setInterval(function () {
 				?.src?.split("/")
 				?.slice(-2)[0];
 			add_button = document.createElement("button");
-			add_button.className = "selena-add-button";
+			add_button.className = "selene-add-button";
 			if (modId) {
 				add_button.innerHTML = "+";
 			}

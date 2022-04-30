@@ -1,14 +1,14 @@
 {
-	"name": "Selena Modpacker",
+	"name": "Selene Modpacker",
 	"description": "A tool for creating and managing modpacks.",
 	"author": "Shap_po",
-	"homepage_url": "https://github.com/shap-po/selena-modpacker",
+	"homepage_url": "https://github.com/shap-po/selene-modpacker",
 	"version": "1.0.0",
 	"manifest_version": 3,
 	"icons": {
-		"32": "icons/selena-16.png",
-		"48": "icons/selena-48.png",
-		"64": "icons/selena-128.png"
+		"32": "icons/icon-16.png",
+		"48": "icons/icon-48.png",
+		"64": "icons/icon-128.png"
 	},
 	"permissions": ["storage", "unlimitedStorage"],
 	"action": {

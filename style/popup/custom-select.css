@@ -60,7 +60,7 @@ Actually this should be a part of interface.css but it's to large and developed 
 	cursor: default;
 }
 .custom-select .select-options .custom-option.selected {
-	background-color: var(--selena-color);
+	background-color: var(--selene-color);
 	color: var(--color-brand-inverted) !important;
 	font-weight: 600;
 }

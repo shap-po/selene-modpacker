@@ -9,14 +9,14 @@ setInterval(function () {
 		var container = mods[i].querySelector(
 			'div[class="w-full lg:w-unset justify-between lg:min-w-40 ml-auto flex flex-row-reverse lg:flex-col items-end"] > div[class="flex mb-2 -mx-1"]'
 		);
-		var add_button = container.querySelector("button.selena-add-button");
+		var add_button = container.querySelector("button.selene-add-button");
 		if (!add_button) {
 			var modId =
 				container.querySelector("a[data-project-id]")?.dataset
 					.projectId;
 			var add_button = document.createElement("button");
 			add_button.style.width = "30px";
-			add_button.className = "button selena-add-button";
+			add_button.className = "button selene-add-button";
 			if (modId) {
 				add_button.innerHTML = "+";
 			}

@@ -1,6 +1,7 @@
 ![](icons/text-logo.svg)
 
 This project is an open source modpacker extension, which allows you to save mods from [ModRinth](https://modrinth.com/mods) and [CurseForge](https://www.curseforge.com/minecraft/mc-mods) to collections (modpacks) and download them at once.
+
 Feel free to contribute to the project!
 
 ## Other features

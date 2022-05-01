@@ -1,6 +1,6 @@
 ![](icons/text-logo.svg)
 
-This project is an open source modpacker extension, which allows you to save mods from [ModRinth](https://modrinth.com/mods) and [CurseForge](https://www.curseforge.com/minecraft/mc-mods) to collections (modpacks) and download them at once.
+This project is an open source modpacker extension, which allows you to save mods from [Modrinth](https://modrinth.com/mods) and [CurseForge](https://www.curseforge.com/minecraft/mc-mods) to collections (modpacks) and download them at once.
 
 Feel free to contribute to the project!
 
@@ -10,7 +10,7 @@ Feel free to contribute to the project!
 -   Disabling of mods
 -   Search bar to not be lost in the mod list
 -   Drag & drop mods to reorder them
--   Theme synchronization with the ModRinth
+-   Theme synchronization with the Modrinth
 -   Support for [Fabric](https://fabricmc.net/), [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) and [Quilt](https://quiltmc.org/)
 
 ## Planned features
@@ -23,7 +23,7 @@ Feel free to contribute to the project!
 
 ![](images/screenshot.png)
 
-Color of buttons matches the color of mod provider. Eg. ModRinth's buttons are green and CurseForge's are orange.
+Color of buttons matches the color of mod provider. Eg. Modrinth's buttons are green and CurseForge's are orange.
 
 ## Installation
 
@@ -41,7 +41,7 @@ Color of buttons matches the color of mod provider. Eg. ModRinth's buttons are g
 
 1. Click the extension icon in the toolbar.
 2. Click the "New modpack" button and enter a name for the modpack.
-3. Reload the ModRinth or CurseForge page and you'll see the buttons to add mods to your modpack.
+3. Reload the Modrinth or CurseForge page and you'll see the buttons to add mods to your modpack.
 4. Click the buttons to add mods to your modpack.
 5. Select version and a modloader.
 6. Click "Download" to download the modpack. Or "Export" to share the modpack with friends (If you have ones).

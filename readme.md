@@ -36,6 +36,7 @@ Color of buttons matches the color of mod provider. Eg. Modrinth's buttons are g
 3. Click the "Load unpacked" button.
 4. Select the folder where you unpacked the extension (obviously, you have to download it first).
 5. You're done!
+Also make sure you don't delete extension folder, because if you, it will be gone.
 
 ## Usage
 

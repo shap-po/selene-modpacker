@@ -5,16 +5,16 @@ var finder = setInterval(function () {
 	var container = document.querySelector(
 		'header.game-header > div.container div[class="flex mb-2"]'
 	);
-	if (container) {
+	//get mod id using Xpath
+	var modId = document.evaluate(
+		"/html/body/div[1]/main/div[1]/div[2]/section/aside/div[2]/div/div[1]/div[2]/div[1]/span[2]",
+		document,
+		null,
+		XPathResult.STRING_TYPE,
+		null
+	).stringValue;
+	if (container && modId) {
 		clearInterval(finder);
-		//get mod id using Xpath
-		var modId = document.evaluate(
-			"/html/body/div[1]/main/div[1]/div[2]/section/aside/div[2]/div/div[1]/div[2]/div[1]/span[2]",
-			document,
-			null,
-			XPathResult.STRING_TYPE,
-			null
-		).stringValue;
 
 		var add_button = document.createElement("button");
 		add_button.innerHTML = "+ Add mod to modpack";

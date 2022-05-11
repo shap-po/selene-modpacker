@@ -3,7 +3,7 @@
 	"description": "A tool for creating and managing modpacks.",
 	"author": "Shap_po",
 	"homepage_url": "https://github.com/shap-po/selene-modpacker",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"manifest_version": 3,
 	"icons": {
 		"16": "icons/icon-16.png",

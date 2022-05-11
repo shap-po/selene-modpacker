@@ -27,16 +27,23 @@ Color of buttons matches the color of mod provider. Eg. Modrinth's buttons are g
 
 ## Installation
 
+### From extension store
+
+-   Chrome requires me to buy developer license to publish the extension. I don't have it, so I can't publish it for now. [You can donate me to get it faster](#support)
+-   [Edge](https://microsoftedge.microsoft.com/addons/detail/selene-modpacker/dfnmpodechfppakhgbdpjmcilmlfolpa)
+
+### From GitHub
+
 1. Open the extensions page in your browser.
-   [Chrome](chrome://extensions)
-   [Firefox](about:addons)
-   [Edge](edge://extensions)
-   [Opera](opera://extensions)
+    - [Chrome](chrome://extensions)
+    - [Firefox](about:addons)
+    - [Edge](edge://extensions)
+    - [Opera](opera://extensions)
 2. Enable developer mode.
 3. Click the "Load unpacked" button.
 4. Select the folder where you unpacked the extension (obviously, you have to download it first).
-5. You're done!
-Also make sure you don't delete extension folder, because if you, it will be gone.
+5. Also make sure you don't delete extension folder, because if you, it will be gone.
+6. You're done!
 
 ## Usage
 

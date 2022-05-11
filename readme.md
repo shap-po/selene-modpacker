@@ -1,5 +1,7 @@
 ![](icons/text-logo.svg)
 
+[![](images/stop-war.svg)](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
+
 This project is an open source modpacker extension, which allows you to save mods from [Modrinth](https://modrinth.com/mods) and [CurseForge](https://www.curseforge.com/minecraft/mc-mods) to collections (modpacks) and download them at once.
 
 Feel free to contribute to the project!

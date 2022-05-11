@@ -32,7 +32,7 @@ Color of buttons matches the color of mod provider. Eg. Modrinth's buttons are g
 ### From extension store
 
 -   Chrome requires me to buy developer license to publish the extension. I don't have it, so I can't publish it for now. [You can donate me to get it faster](#support)
--   [Edge](https://microsoftedge.microsoft.com/addons/detail/selene-modpacker/dfnmpodechfppakhgbdpjmcilmlfolpa)
+-   [Edge](https://microsoftedge.microsoft.com/addons/detail/selene-modpacker/dfnmpodechfppakhgbdpjmcilmlfolpa) This version might be outdated because it takes a week of waiting to update it.
 
 ### From GitHub
 

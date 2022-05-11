@@ -55,3 +55,8 @@ Color of buttons matches the color of mod provider. Eg. Modrinth's buttons are g
 4. Click the buttons to add mods to your modpack.
 5. Select version and a modloader.
 6. Click "Download" to download the modpack. Or "Export" to share the modpack with friends (If you have ones).
+
+## Support
+
+If you want to support me, you can donate me [here](https://www.paypal.com/donate/?hosted_button_id=DRPEBNY8MAYLE). First 5$ will be used to buy developer license for Chrome.
+Or would be cool if you [support Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi).
